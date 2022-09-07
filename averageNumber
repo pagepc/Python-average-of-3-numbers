@@ -1,0 +1,10 @@
+## Ask user for a number and store it
+
+number1=int(input("Enter number 1: ")) 
+number2=int(input("Enter number 2: "))
+number3=int(input("Enter number 3: "))
+
+## Calulate and print the average of the three numbers 
+
+print("The average of "+str(number1)+ " , " +str(number2)+" , "+str(number3)+
+" is : "+str((number1+number2+number3)/3))
