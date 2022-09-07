@@ -1,0 +1,18 @@
+## Random module for generating/manipulating random integers
+import random
+
+##define the coin
+def flipCoin():
+        return random.randint(1,2)
+##define how many times the coin will be tossed    
+def runSimulation(numTimes):
+        heads = 0
+        for _ in range(numTimes):
+                heads += 1 if flipCoin() == 1 else 0
+
+        print('For', numTimes, 'coinflips=> Heads:' , heads, ', Tails=>',(numTimes-heads))
+                
+size = 10
+while size <=100000:
+        runSimulation(size)
+        size*=10 
